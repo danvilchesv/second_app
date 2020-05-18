@@ -19,6 +19,7 @@ Things you may want to cover:
 
 * Services (job queues, cache servers, search engines, etc.)
 
+* link heroku : https://hidden-reef-44725.herokuapp.com/
 * Deployment instructions
 
 * ...
