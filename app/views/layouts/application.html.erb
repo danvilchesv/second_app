@@ -5,11 +5,57 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+
+    <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/stylesheets/main.css" />
+		<noscript><link rel="stylesheet" href="assets/stylesheets/noscript.css" /></noscript>
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body >
+    <div id="page-wrapper">
+          <div id="header">
+            <nav id="nav" class="navbar">
+              <%= link_to'Home',pages_index_url %>
+              <%= link_to'Dropdown',pages_test_url %>
+              <%= link_to'Login',pages_login_url %>
+              <%= link_to'About_us',pages_about_us_url %>
+            </nav>
+            <%= yield %>
+          </div>
+    </div>
+
+
+
+  <!-- Footer -->
+    <div id="footer">
+      <div class="container">
+        <hr />
+        <div class="row">
+          <div class="col-12">
+            <!-- Copyright -->
+              <div class="copyright">
+                <ul class="menu">
+                  <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.dropotron.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+
+
   </body>
 </html>
